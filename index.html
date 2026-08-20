@@ -21,9 +21,13 @@
                 <a href="#about">About</a>
                 <a href="#music">Music</a>
                 <a href="#projects">Projects</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#shows">Shows</a>
                 <a href="#contact">Contact</a>
             </div>
+                <button class="menu-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
         </nav>
     </header>
 
@@ -186,41 +190,212 @@
 
         </section>
 
+        <section id="gallery" class="section">
 
-        <section id="shows" class="section">
+    <p class="eyebrow">GALLERY</p>
 
-            <p class="eyebrow">SHOWS</p>
+    <h2>Photos</h2>
 
-            <h2>Upcoming</h2>
+    <div class="gallery">
 
-            <div class="show">
-                <span>11 NOV</span>
-                <span>With Studio4 - Opening for the Watchers at valhalla</span>
+        <img src="images/gallery1.jpg" alt="Hupstein Eng Solo Shot">
+
+        <img src="images/gallery2.jpg" alt="Hupstein Eng playing guitar">
+
+        <img src="images/gallery3.jpg" alt="Hupstein Eng Trio">
+
+        <img src="images/gallery4.jpg" alt="Hupstein Eng Trio">
+
+        <img src="images/gallery5.jpg" alt="Hupstein Eng Trio">
+
+        <img src="images/gallery6.jpg" alt="Hupstein Eng Trio">
+
+    </div>
+
+<section id="shows" class="section">
+
+    <p class="eyebrow">SHOWS</p>
+
+    <h2>Upcoming</h2>
+
+    <div class="shows-list">
+       
+        <article class="show">
+
+            <div class="show-date">
+                <span class="show-day">14</span>
+                <span class="show-month">OCT 2026</span>
             </div>
 
-            <div class="show">
-                <span>31 DEC</span>
-                <span>With Studio4 - NYE at Courtenay Place</span>
+            <div class="show-info">
+
+                <p class="show-type">HUPSTEIN ENG QUARTET</p>
+
+                <h3>Jazz Festival - Hupstein Eng and Friends</h3>
+
+                <p class="show-venue">
+                    The Undercurrent — Wellington, NZ
+                </p>
+
+                <a href="https://www.undertheradar.co.nz/gig/103917/Jazz-Festival-Hupstein-Eng-And-Friends.utr"
+                   class="show-button"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Event Details
+                </a>
+
             </div>
 
-        </section>
+        </article>
+
+        <article class="show">
+
+            <div class="show-date">
+                <span class="show-day">11</span>
+                <span class="show-month">NOV 2026</span>
+            </div>
+
+            <div class="show-info">
+
+                <p class="show-type">WITH STUDIO4</p>
+
+                <h3>Opening for The Watchers</h3>
+
+                <p class="show-venue">
+                    Valhalla — Wellington, NZ
+                </p>
+
+                <a href="YOUR_TICKET_LINK_HERE"
+                   class="show-button"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Event Details
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="show">
+
+            <div class="show-date">
+                <span class="show-day">31</span>
+                <span class="show-month">DEC 2026</span>
+            </div>
+
+            <div class="show-info">
+
+                <p class="show-type">WITH STUDIO4</p>
+
+                <h3>New Year's Eve</h3>
+
+                <p class="show-venue">
+                    Courtenay Place — Wellington, NZ
+                </p>
+
+                <a href="YOUR_TICKET_LINK_HERE"
+                   class="show-button"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Event Details
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 
 
         <section id="contact" class="section">
 
-            <p class="eyebrow">CONTACT</p>
+    <p class="eyebrow">CONTACT</p>
 
-            <h2>Get in touch.</h2>
+    <h2>Get in touch.</h2>
 
-            <p>
-                For bookings, collaborations and enquiries.
-            </p>
+    <p>
+        For bookings, collaborations and enquiries.
+    </p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Email</h3>
 
             <a href="mailto:hupstein.guitar@gmail.com">
                 hupstein.guitar@gmail.com
             </a>
 
-        </section>
+        </div>
+
+
+        <form 
+            class="contact-form"
+            action="https://formspree.io/f/xgawdwnr"
+            method="POST">
+        <input
+             type="hidden"
+             name="_subject"
+             value="New enquiry from Hupstein Eng website"
+        >
+            <div class="form-group">
+
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Your message"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="form-button">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
 
     </main>
 
