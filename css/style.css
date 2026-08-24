@@ -228,7 +228,7 @@ h1 {
 
 .project img {
     width: 100%;
-    height: 500px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
