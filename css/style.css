@@ -9,10 +9,16 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     background: #111;
     color: #f5f5f5;
     line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Manrope", sans-serif;
 }
 
 
@@ -38,8 +44,15 @@ nav {
 .logo {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
     letter-spacing: 2px;
+
+    transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+    opacity: 0.7;
 }
 
 .nav-links {
@@ -50,6 +63,29 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
+
+    position: relative;
+
+    transition: 0.2s ease;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 1px;
+
+    background: white;
+
+    transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .menu-toggle {
@@ -91,7 +127,7 @@ nav {
 }
 
 .eyebrow {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     letter-spacing: 3px;
     margin-bottom: 20px;
 }
@@ -157,7 +193,7 @@ h1 {
 
 .section {
     padding: 120px 10%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -167,7 +203,7 @@ h1 {
 }
 
 .section > p {
-    max-width: 650px;
+    max-width: 850px;
 }
 
 
@@ -238,11 +274,6 @@ h1 {
     transition: 0.2s;
 }
 
-.project-links a:hover {
-    background: white;
-    color: black;
-}
-
 .project-links i {
     font-size: 1.1rem;
 }
@@ -264,19 +295,14 @@ h1 {
 .gallery img {
     width: 100%;
     height: 400px;
-
     object-fit: cover;
-
     display: block;
-
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
     transform: scale(1.02);
-}
-.gallery img {
-    cursor: pointer;
 }
 
 
@@ -516,7 +542,6 @@ footer {
 .form-group input,
 .form-group textarea {
     width: 100%;
-
     padding: 15px;
 
     background: #111;
@@ -524,7 +549,7 @@ footer {
 
     border: 1px solid #444;
 
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1rem;
 
     outline: none;
@@ -566,6 +591,10 @@ footer {
 /* Mobile */
 
 @media (max-width: 700px) {
+
+    h1 {
+        letter-spacing: 2px;
+    }
 
     .nav-links {
         display: none;
